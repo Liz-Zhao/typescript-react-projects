@@ -5,7 +5,7 @@ import { Todo } from "./Todo";
 
 const TodoList: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState<string>("");
 
   const addTodo = () => {
     if (input.trim()) {
